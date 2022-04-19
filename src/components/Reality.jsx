@@ -6,12 +6,12 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const settings = {
+const settings1 = {
 
     dots: false,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
     speed: 5000,
     autoplaySpeed: 2500,
@@ -39,15 +39,16 @@ const settings2 = {
 
     dots: false,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
     speed: 4500,
     autoplaySpeed: 2300,
     arrows: false,
     cssEase: "linear",
     responsive: [
-        {
+          
+          {
             breakpoint: 1024,
             settings: {
               slidesToShow: 2,
@@ -67,20 +68,21 @@ const settings2 = {
 const settings3 = {
 
     dots: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     autoplay: true,
     speed: 5500,
     autoplaySpeed: 2800,
     arrows: false,
     cssEase: "linear",
     responsive: [
-        {
+         
+          {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 3,
+              slidesToScroll: 3,
             }
           },
           {
@@ -122,7 +124,6 @@ const Reality = () => {
             trigger: realityRef.current,
             start: "top center",
             end: "bottom center",
-            markers: true,
             onEnter: () => setActive(true),
             onLeave: () => setActive(false),
             onEnterBack: () => setActive(true),
@@ -148,7 +149,7 @@ const Reality = () => {
                 <div className="absolute top-0 left-0 w-28 z-10 h-full min-h-full bg-gradient-to-r to-transparent from-[#952515]"></div>
                 <div className="w-full overflow-hidden">
                     <div className="w-full">
-                        <Slider {...settings}>
+                        <Slider {...settings1}>
                             <div className="px-2">
                                 <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
                             </div>

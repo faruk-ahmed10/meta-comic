@@ -44,12 +44,15 @@ html {
 }
 .center .slick-slide {
   transform: scale(0.8);
+  opacity: 0.5;
   transition: transform .5s cubic-bezier(.4,0,.2,1);
+  transition: all 0.5s cubic-bezier(0.4,0, 2, 1);
   cursor: pointer;
   overflow: hidden;
 }
 .slick-slide.slick-center {
   transform: scale(1);
+  opacity: 1;
 }
 
 .slick-slide.slick-center .family{
