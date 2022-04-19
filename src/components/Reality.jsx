@@ -139,7 +139,7 @@ const Reality = () => {
                     <div className="overflow-hidden">
                         <h1 ref={titleRef} className="text-2xl sm:text-5xl font-bold">The New Reality</h1>
                     </div>
-                    <p ref={subRef} className="text-sm md:text-lg uppercase">ARTIST SOUL, CUTTING EDGE TECHNOLOGY, BLOCKCHAIN DNA.</p>
+                    <p ref={subRef} className="text-sm md:text-lg uppercase py-2">ARTIST SOUL, CUTTING EDGE TECHNOLOGY, BLOCKCHAIN DNA.</p>
                 </div>
                 <div className="">
                     <img src={reality} alt="" className="" />
