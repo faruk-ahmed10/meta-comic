@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 
+
+.slick-slide.slick-center {
+  transform: scale(1.1);
+  width: 80%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-prev {
+  width: 15vw !important;
+  height: 100% !important;
+  left: 2% !important;
+  top: 0;
+  color: red;
+  z-index: 1;
+}
+
+
+.slick-prev:before {
+    content: '' !important;
+}
+
+.slick-next:before {
+    content: '' !important;
+}
+.slick-next {
+  width: 15vw !important;
+  height: 100% !important;
+  background: red;
+  right: 2% !important;
+  z-index: 1;
+}
+.center .slick-slide {
+  transform: scale(0.8);
+  transition: transform .5s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+  overflow: hidden;
+}
+.slick-slide.slick-center {
+  transform: scale(1);
+}
+
+.slick-slide.slick-center .family{
+  display: none;
+}
