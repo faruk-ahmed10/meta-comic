@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import 'swiper/css';
 
 // Importing components
 import Header from './components/Header';

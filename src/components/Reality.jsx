@@ -1,6 +1,8 @@
 import React from 'react';
 import reality from '../../assets/img/reality.png';
 import Slider from 'react-slick';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, FreeMode } from 'swiper';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -13,7 +15,7 @@ const settings1 = {
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
-    speed: 5000,
+    speed: 8000,
     autoplaySpeed: 2500,
     arrows: false,
     cssEase: "linear",
@@ -149,44 +151,68 @@ const Reality = () => {
                 <div className="absolute top-0 left-0 w-28 z-10 h-full min-h-full bg-gradient-to-r to-transparent from-[#952515]"></div>
                 <div className="w-full overflow-hidden">
                     <div className="w-full">
-                        <Slider {...settings1}>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                        </Slider>
+                        <Swiper
+                        slidesPerView={3}
+                        loop={true}
+                        speed={10000}
+                        grabCursor={true}
+                        autoplay = {{
+                            delay: 1,
+                            disableOnInteraction: false
+                        }}
+                        modules={[Autoplay, FreeMode]}
+                        >
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                        ...
+                        </Swiper>
                     </div>
+
                     <div className="w-full">
-                        <Slider {...settings2}>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                        </Slider>
+                        <Swiper
+                        slidesPerView={3}
+                        loop={true}
+                        speed={8000}
+                        grabCursor={true}
+                        autoplay = {{
+                            delay: 1,
+                            disableOnInteraction: false
+                        }}
+                        modules={[Autoplay, FreeMode]}
+                        >
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                        ...
+                        </Swiper>
                     </div>
+
                     <div className="w-full">
-                        <Slider {...settings3}>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                            <div className="px-2">
-                                <p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p>
-                            </div>
-                        </Slider>
+                        <Swiper
+                        slidesPerView={3}
+                        loop={true}
+                        speed={9000}
+                        grabCursor={true}
+                        autoplay = {{
+                            delay: 1,
+                            disableOnInteraction: false
+                        }}
+                        modules={[Autoplay, FreeMode]}
+                        >
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                            <SwiperSlide><p className="text-xl font-semibold whitespace-nowrap">Publish comic books your way</p></SwiperSlide>
+                        ...
+                        </Swiper>
                     </div>
+
                 </div>
                 <div className="absolute top-0 right-0 w-28 z-10 h-full min-h-full bg-gradient-to-r from-transparent to-[#952515]"></div>
             </div>
