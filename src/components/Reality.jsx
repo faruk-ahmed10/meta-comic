@@ -7,98 +7,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-
-const settings1 = {
-
-    dots: false,
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    speed: 8000,
-    autoplaySpeed: 2500,
-    arrows: false,
-    cssEase: "linear",
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          }
-    ]
-
-  };
-const settings2 = {
-
-    dots: false,
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    speed: 4500,
-    autoplaySpeed: 2300,
-    arrows: false,
-    cssEase: "linear",
-    responsive: [
-          
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          }
-    ]
-
-  };
-const settings3 = {
-
-    dots: false,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    infinite: true,
-    autoplay: true,
-    speed: 5500,
-    autoplaySpeed: 2800,
-    arrows: false,
-    cssEase: "linear",
-    responsive: [
-         
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          }
-    ]
-
-  };
-
-
 const Reality = () => {
 
     const realityRef = React.useRef();
@@ -152,10 +60,19 @@ const Reality = () => {
                 <div className="w-full overflow-hidden">
                     <div className="w-full">
                         <Swiper
-                        slidesPerView={3}
+                        slidesPerView={1}
                         loop={true}
                         speed={10000}
                         grabCursor={true}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2
+                            },
+                            1024: {
+                                slidesPerView: 3
+                            }
+
+                        }}
                         autoplay = {{
                             delay: 1,
                             disableOnInteraction: false
@@ -173,10 +90,19 @@ const Reality = () => {
 
                     <div className="w-full">
                         <Swiper
-                        slidesPerView={3}
+                        slidesPerView={1}
                         loop={true}
                         speed={8000}
                         grabCursor={true}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2
+                            },
+                            1024: {
+                                slidesPerView: 3
+                            }
+
+                        }}
                         autoplay = {{
                             delay: 1,
                             disableOnInteraction: false
@@ -194,10 +120,19 @@ const Reality = () => {
 
                     <div className="w-full">
                         <Swiper
-                        slidesPerView={3}
+                        slidesPerView={1}
                         loop={true}
                         speed={9000}
                         grabCursor={true}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2
+                            },
+                            1024: {
+                                slidesPerView: 3
+                            }
+
+                        }}
                         autoplay = {{
                             delay: 1,
                             disableOnInteraction: false
